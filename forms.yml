@@ -1,0 +1,13 @@
+forms:
+  newsletter_form:
+    email:
+    - type: from_text
+
+  datos_form:
+    nombre:
+    - type: from_text
+    apellido:
+    - type: from_text
+    comentario:
+    - type: from_text
+

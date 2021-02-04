@@ -1,0 +1,16 @@
+stories:
+ - story: greet and subscribe
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: subscribe
+   - action: newsletter_form
+   - active_loop: newsletter_form
+
+ - story: Completar formulario
+   steps:
+   - intent: saludo
+   - action: utter_saludo
+   - intent: llenar_datos
+   - action: datos_form
+   - active_loop: datos_form

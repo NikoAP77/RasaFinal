@@ -1,0 +1,30 @@
+rules:
+ - rule: activate subscribe form
+   steps:
+   - intent: subscribe
+   - action: newsletter_form
+   - active_loop: newsletter_form
+
+ - rule: submit form
+   condition:
+   - active_loop: newsletter_form
+   steps:
+   - action: newsletter_form
+   - active_loop: null
+   - action: utter_subscribed
+
+ - rule: activate llenar_datos form
+   steps:
+   - intent: llenar_datos
+   - action: datos_form
+   - active_loop: datos_form
+
+ - rule: confirmar form
+   condition:
+   - active_loop: datos_form
+   steps:
+   - action: datos_form
+   - active_loop: null
+   - slot_was_set:
+       - requested_slot: null
+   - action: validate_action_guardar
