@@ -1,6 +1,6 @@
 # RasaFinal
 
-## Para comenzar un chatbot ingresamos el siguiente comando que nos creara un modelo basico entrenado: /n
+### Para comenzar un chatbot ingresamos el siguiente comando que nos creara un modelo basico entrenado: \n
 
   rasa init
   
