@@ -14,6 +14,9 @@ intents:
 - Feedback
 - FirstName
 - LastName
+- bienvenida3
+- bienvenida2
+- bienvenida1
 slots:
   email:
     type: unfeaturized
@@ -25,6 +28,9 @@ slots:
     type: unfeaturized
     influence_conversation: false
   comentario:
+    type: unfeaturized
+    influence_conversation: false
+  requested_slot:
     type: unfeaturized
     influence_conversation: false
 responses:
@@ -49,6 +55,34 @@ responses:
   - text: Tu datos son {nombre} esta bien!
   utter_guardar:
   - text: Guardar
+  utter_bienvenida1:
+  - text: "¡HOLA!\n Conoce más sobre nuestra empresa, además puedes cotizar tu idea\
+      \ online.\n ¿Cómo te puedo ayudar?\n 1. Quiero informacion sobre la empresa.\n\
+      \ 2. Quiero informacion sobre nuestras app.\n 3. Quiero saber mas sobre los\
+      \ precios de los paquetes."
+  utter_respuesta1:
+  - text: "Hola, somos una empresa de desarrollo de software y servicios digitales\
+      \ en Cuenca. Buscamos implementar formas de desarrollo modernas y significativas\
+      \ para nuestros clientes.\n Necesitas más informacion o una cotización\n 1.\
+      \ Si\n 2. No\n"
+  utter_uno:
+  - text: "¿Cómo te puedo ayudar?\n 1. Quiero información sobre la empresa\n 2. Quiero\
+      \ información sobre los servicios\n 3. Quiero una cotizacion de un software.\n"
+  utter_dos:
+  - text: Perfecto, Somos una empresa de desarrollo de software y servicios digitales.
+      Buscamos implementar formas de desarrollo modernas y significativas para nuestros
+      clientes
+  utter_tres:
+  - text: En esta pagina podrás revisar todas las tecnologías utilizadas
+  utter_cuatro:
+  - text: ¿Te puedo ayudar en algo más?
+  utter_cinco:
+  - text: De acuerdo, esperamos que tu experiencia con nosotros te haya ayudado a
+      solventar tus dudas
+  utter_seis:
+  - text: 'Perfecto, Estos son los servicios ofrecidos. Necesitas informacion sobre:
+      -Software - Domótica, - Comunicación, - Contabilidad, - Marketing Digital, -
+      ChatBot, - Facturación Electrónica, - Comercio Electrónico, - Paqueteria y viajes'
 actions:
 - '...'
 - utter_greet

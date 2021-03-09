@@ -14,3 +14,22 @@ stories:
    - intent: llenar_datos
    - action: datos_form
    - active_loop: datos_form
+
+ - story: bienvenida 1
+   steps:
+   - action: utter_bienvenida1
+   - intent: bienvenida1
+   - action: utter_respuesta1
+
+ - story: bienvenida 1
+   steps:
+   - action: utter_bienvenida1
+   - intent: bienvenida2
+
+ - story: bienvenida 1
+   steps:
+   - action: utter_bienvenida1
+   - intent: bienvenida3
+
+
+

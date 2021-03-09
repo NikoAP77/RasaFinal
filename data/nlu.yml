@@ -75,3 +75,22 @@ nlu:
   examples: |
     - guardar
     - listo
+
+- intent: bienvenida1
+  examples: |
+    - 1
+    - Quiero informacion sobre la empresa
+
+- intent: bienvenida2
+  examples: |
+    - 2
+    - Quiero informacion sobre nuestra app
+
+- intent: bienvenida3
+  examples: |
+    - 3
+    - Quiero saber mas sobre los precios de los paquetes.
+
+
+
+
